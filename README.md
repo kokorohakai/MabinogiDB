@@ -5,3 +5,5 @@ I needed something to sharpen up my web application developement skills, and rem
 As you can see I focused on designing a LAPP stack. (Linux, Apache, PostGreSQL and PHP) With this stack I designed a some what MVC (more View / Controller driven) stack. The views are loaded and using the API, data is collected from controllers, which use an abstracted model to pull data from the database. 
 
 I hope this will also be useful to anyone else out there to learn a bit about this stuff.
+
+This project is unfortunately far from complete, but as I finish parts of the site, I will be updating this repository.
