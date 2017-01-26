@@ -7,3 +7,9 @@ As you can see I focused on designing a LAPP stack. (Linux, Apache, PostGreSQL a
 I hope this will also be useful to anyone else out there to learn a bit about this stuff.
 
 This project is unfortunately far from complete, but as I finish parts of the site, I will be updating this repository.
+
+*Explanation*
+
+The folder "WWW" is what is public accessable. You will notice the .htaccess file. It pushes any unresolved url to index.php. If apache fails to find a requested url, it forces it to be parsed by that file. 
+
+From there the index.php access it's application information from "protected". Where it looks for a route via "sections". "layout.php" is the basic view that is used across the entire site, and then each "section" has it's own view. "utility_methods.php" is a collection of global methods used globally by php. "api" contains all of the controllers for data accessed via ajax to /api . It will parse m (for module) and a (for action) and use those to determine how to format the data. 
